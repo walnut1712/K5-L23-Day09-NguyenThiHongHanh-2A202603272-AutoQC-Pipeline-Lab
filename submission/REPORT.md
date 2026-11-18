@@ -31,6 +31,10 @@ Chưa train: ghi "chưa chạy" và lý do, rồi bỏ qua phần còn lại c�
 TODO(học viên): chênh mAP50 (clean − raw) so với **độ lệch chuẩn giữa các seed**; kết luận **trung thực** (nằm trong nhiễu thì nói là chưa kết luận được); ≥ 2 giả thuyết giải thích (ảnh trùng/rò rỉ test trong `raw`, nhãn máy còn lại trong `clean`, test chỉ 100 ảnh…) và cách kiểm.
 
 ## 6. Quyết định và ghi chú AI
-TODO(học viên): (a) quyết định cuối; nếu Hold/Rework cần làm gì để thành Release? (b) Dùng AI viết code? Ghi 3 dòng: prompt chính, cách bạn kiểm code AI, 1 lần AI sai. Không dùng: ghi "không dùng".
+TODO(học viên): quyết định cuối; nếu Hold/Rework cần làm gì để thành Release?
+
+- Prompt chính: triển khai bốn module ở Bước 2 theo `GUIDE.md` và unit test sẵn có.
+- Kiểm code AI: chạy 50 test của bốn module (đều đạt); chạy toàn bộ suite (74 đạt, 5 còn lỗi).
+- Lần AI sai: ban đầu quy 5 lỗi còn lại cho check `duplicates`; kiểm tra sâu hơn cho thấy `imagehash.phash` không tải được DLL NumPy do Windows App Control, còn `duplicates.py` đang bỏ qua lỗi đó.
 
 *(Thưởng +2, tùy chọn)* CVAT: lọc `width < 20`, ảnh/số box khớp, đối chiếu `BOX_TINY` (xem docs/CVAT_FILTER.md), 1 câu về `can_review`.

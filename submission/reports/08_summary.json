@@ -1,0 +1,18 @@
+{
+  "verdict": {
+    "decision": "Hold",
+    "n_errors": 0,
+    "n_warn_images": 53,
+    "n_images": 193,
+    "warn_ratio": 0.2746,
+    "reasons": [
+      "53/193 ảnh còn cảnh báo chưa duyệt (27.46%), đạt hoặc vượt ngưỡng Hold 10.00%."
+    ]
+  },
+  "reviewed": 80,
+  "budget": 80,
+  "seconds": 23.5,
+  "exported": "/mnt/d/AITCL2/K5-L23-Day09-NguyenThiHongHanh-2A202603272-AutoQC-Pipeline-Lab/submission/export/clean_v1",
+  "config_sha1": "e22cc8f52ee0244ebbf98f6af5659ecc61c18a29",
+  "review_sim_sha1": "7988ca22827f780a7043a2300490e679a1697154"
+}
